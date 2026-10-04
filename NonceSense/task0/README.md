@@ -1,5 +1,5 @@
 ## Microcontroller used
-STM32F446RE
+STM32F446RE-Nucleo
 
 ## Pin Mapping
 
