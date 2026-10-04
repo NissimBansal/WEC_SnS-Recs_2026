@@ -4,7 +4,7 @@
 #define GPIOA 0x40020000 /* start of GPIO port A registers*/
 #define TIM2 0x40000000 /* start of TIMER2 registers*/
 
-init(void)
+void init(void)
 {
 	/* Enabling clocks for peripherals */
 	*((volatile uint32_t*)(RCC + 0x30)) |= (1 << 0); /* Clock enable for GPIOA */
