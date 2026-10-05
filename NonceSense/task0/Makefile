@@ -2,7 +2,7 @@
 CC = arm-none-eabi-gcc
 FLAGS = -Wall -Wextra -O2 -nostdlib -nostartfiles
 
-.PHONY: clean clean flash
+.PHONY: compile clean flash
 
 compile: Task_0.c
 	@$(CC) $(FLAGS) -c Task_0.c -o Task_0.exe
