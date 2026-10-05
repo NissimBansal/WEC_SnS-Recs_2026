@@ -7,4 +7,4 @@ compile: Task_0.c
 
 .PHONY: clean
 clean:
-	@rm Task_0.exe
+	@rm -rf Task_0.exe

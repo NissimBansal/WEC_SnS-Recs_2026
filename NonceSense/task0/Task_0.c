@@ -15,12 +15,12 @@ void init(void)
 	*((volatile uint32_t*)(GPIOA)) &= ~(1 << 11); /* Setting MODER5 to output */
 
 	/* Setting prescalar and auto-reload for TIM2 */
-	*((volatile uint32_t*)(TIM2 + 0x28)) = 399; /* Prescalar */
+	*((volatile uint32_t*)(TIM2 + 0x28)) = 799; /* Prescalar */
 	*((volatile uint32_t*)(TIM2 + 0x2C)) = 19999; /* Auto-reload */
-	/* This gives frequency = 1Hz considering APB1, on which TIM2 sits, recieves 8MHz clock */
+	/* This gives frequency = 1Hz considering APB1, on which TIM2 sits, recieves 16MHz clock */
 }
 
-int main()
+int main(void)
 {
 	init();
 
