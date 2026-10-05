@@ -1,7 +1,8 @@
-FLAGS = -Wall -Wextra -O2 -nostartfiles
+FLAGS = -Wall -Wextra -O2 -nostdlib -nostartfiles
 
-Task_0.o : Task_0.c
-	@gcc $(FLAGS) -c Task_0.c -o Task_0.o
+Task_0.exe: Task_0.c
+	@gcc $(FLAGS) -c Task_0.c -o Task_0.exe
 
-clean :
-	@rm Task_0.o
+.PHONY: clean
+clean:
+	@rm Task_0.exe
