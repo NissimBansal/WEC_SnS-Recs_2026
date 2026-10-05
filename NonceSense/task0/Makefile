@@ -1,7 +1,9 @@
+.DELETE_ON_ERROR:
+CC = arm-none-eabi-gcc
 FLAGS = -Wall -Wextra -O2 -nostdlib -nostartfiles
 
-Task_0.exe: Task_0.c
-	@gcc $(FLAGS) -c Task_0.c -o Task_0.exe
+compile: Task_0.c
+	@$(CC) $(FLAGS) -c Task_0.c -o Task_0.exe
 
 .PHONY: clean
 clean:
